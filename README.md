@@ -10,7 +10,11 @@ $ npm install
 
 ## Development
 
-Run `npm run watch` and open the `dist/index.html` in your browser. Changes made to `src/main.js` or any dependencies will show up on reloading the webbrowser.
+`npm run watch` and open the `dist/index.html` in your browser. Changes made to `src/main.js` or any dependencies will show up on reloading the webbrowser.
+
+## Testing
+
+`npm run test` runs the tests once, or `npm run test-watch` to continuously run the tests and watch for changes.
 
 ## Building
 
