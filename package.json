@@ -1,0 +1,17 @@
+{
+  "name": "jscourse",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "watchify src/main.js -t [ babelify ] -o dist/bundle.js -v",
+    "build": "browserify src/main.js -t [ babelify ] | uglifyjs -mc warnings=false > dist/bundle.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.56",
+    "@babel/plugin-transform-async-to-generator": "^7.0.0-beta.56",
+    "@babel/preset-env": "^7.0.0-beta.56",
+    "babelify": "^9.0.0",
+    "browserify": "^16.2.2",
+    "uglify-js": "^3.4.6",
+    "watchify": "^3.11.0"
+  }
+}
